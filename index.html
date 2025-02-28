@@ -28,7 +28,7 @@
       <div class="flex justify-center items-center">
         <div class="flex justify-center items-center gap-3">
           <img src="assets/checkbox.png" id="checkbox-btn" />
-          <span class="font-bold text-3xl pr-8" id="checkbox-Number">23</span>
+          <span class="font-bold text-3xl pr-8" id="checkbox-Number">24</span>
         </div>
         <div>
           <img src="assets/theme-btn.png" alt="" />
@@ -43,7 +43,7 @@
               class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold"
               id="Completed-Task-btn"
             >
-              05
+              06
             </div>
             <p class="text-lg font-semibold">Assigned</p>
           </div>
@@ -67,60 +67,58 @@
         <div class="grid grid-cols-3 gap-6">
           <div class="bg-gray-100 p-4 rounded-lg shadow">
             <span class="bg-gray-200 px-2 py-1 rounded text-sm">ShopEase</span>
-            <h2 class="font-bold mt-2">Fix Mobile Button Issue</h2>
+            <h2 id="first-task" class="font-bold mt-2">
+              Fix Mobile Button Issue
+            </h2>
             <p class="text-sm text-gray-500 mt-1">
               Debug using Chrome DevTools, check for overlapping...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer Complete-btn"
                 >Completed</span
               >
             </div>
           </div>
           <div class="bg-gray-100 p-4 rounded-lg shadow">
             <span class="bg-gray-200 px-2 py-1 rounded text-sm">CloudSync</span>
-            <h2 class="font-bold mt-2">Add Dark Mode</h2>
+            <h2 id="secend-task" class="font-bold mt-2">Add Dark Mode</h2>
             <p class="text-sm text-gray-500 mt-1">
               Store the user’s preference in localStorage, update CSS...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer Complete-btn"
                 >Completed</span
               >
             </div>
           </div>
           <div class="bg-gray-100 p-4 rounded-lg shadow">
             <span class="bg-gray-200 px-2 py-1 rounded text-sm">SwiftPay</span>
-            <h2 class="font-bold mt-2">Optimize Home Page</h2>
+            <h2 id="third-task" class="font-bold mt-2">Optimize Home Page</h2>
             <p class="text-sm text-gray-500 mt-1">
               Debug using Chrome DevTools, check for overlapping...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer Complete-btn"
                 >Completed</span
               >
             </div>
           </div>
           <div class="bg-gray-100 p-4 rounded-lg shadow">
             <span class="bg-gray-200 px-2 py-1 rounded text-sm">Meta</span>
-            <h2 class="font-bold mt-2">Add new emoji ✋</h2>
+            <h2 id="fourth-task" class="font-bold mt-2">Add new emoji ✋</h2>
             <p class="text-sm text-gray-500 mt-1">
               Debug using Chrome DevTools, check for overlapping...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer Complete-btn"
                 >Completed</span
               >
             </div>
@@ -129,30 +127,32 @@
             <span class="bg-gray-200 px-2 py-1 rounded text-sm"
               >Google LLC</span
             >
-            <h2 class="font-bold mt-2">Integrate OpenAI API</h2>
+            <h2 id="fiveth-task" class="font-bold mt-2">
+              Integrate OpenAI API
+            </h2>
             <p class="text-sm text-gray-500 mt-1">
               Debug using Chrome DevTools, check for overlapping...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer Complete-btn"
                 >Completed</span
               >
             </div>
           </div>
           <div class="bg-gray-100 p-4 rounded-lg shadow">
             <span class="bg-gray-200 px-2 py-1 rounded text-sm">Glassdoor</span>
-            <h2 class="font-bold mt-2">Improve Job searching</h2>
+            <h2 id="sixth-task" class="font-bold mt-2">
+              Improve Job searching
+            </h2>
             <p class="text-sm text-gray-500 mt-1">
               Debug using Chrome DevTools, check for overlapping...
             </p>
             <div class="mt-3 flex justify-between text-sm">
               <span>Deadline: 21 March 2025</span>
               <span
-                class="bg-blue-600 text-white px-3 py-1 rounded"
-                id="Complete-btn"
+                class="bg-blue-600 text-white px-3 py-1 rounded Complete-btn cursor-pointer"
                 >Completed</span
               >
             </div>
@@ -161,12 +161,19 @@
       </div>
       <div class="w-1/4 bg-white p-4 rounded-lg shadow h-full">
         <h3 class="font-bold text-lg mb-2">Activity Log</h3>
-        <button class="bg-blue-600 text-white px-4 py-2 rounded mb-3 w-full">
+        <button
+          id="Clear-History"
+          class="bg-blue-600 text-white px-4 py-2 rounded mb-3 w-full"
+        >
           Clear History
         </button>
-        <div class="text-sm text-gray-600"></div>
+        <div
+          id="history"
+          class="text-sm text-gray-60 font-bold flex flex-col gap-5"
+        ></div>
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
