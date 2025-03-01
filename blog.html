@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav
+      class="container mx-auto flex justify-between items-center pt-5 shadow-md"
+    >
+      <!-- left side -->
+      <div class="flex justify-center items-center gap-2">
+        <img src="assets/logo.png" />
+        <h1 class="text-3xl">Dev<span class="font-bold">Borad</span></h1>
+      </div>
+      <!-- right side -->
+      <div class="flex justify-center items-center">
+        <button
+          id="backToDeskBtn"
+          class="btn bg-blue-500 p-3 text-white rounded-lg"
+        >
+          Back to Desk
+        </button>
+      </div>
+    </nav>
+    <main class="container mx-auto">
+      <section class="mx-auto p-6">
+        <h2 class="text-5xl font-bold text-center mb-6">Blogs</h2>
+
+        <div class="space-y-4">
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h3>
+            <hr />
+            <p class="text-gray-600 mt-2">
+              querySelectorAll(),querySelector(),getElementsByTagName(),getElementById(),getElementsByClassName()
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg">
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent?
+              <hr />
+            </h3>
+            <p class="text-gray-600 mt-2">
+              innerText – শুধুমাত্র (visible) লেখা নেয় বা সেট করে|innerText –
+              শুধুমাত্র দৃশ্যমান (visible) লেখা নেয় বা সেট করে
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg">
+              Question-3: What is event delegation in the DOM?
+            </h3>
+            <hr />
+            <p class="text-gray-600 mt-2">
+              parent element-এর উপর event listener সেট করি, এবং সেই event child
+              elements গুলোতে apply হয়।
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-lg shadow">
+            <h3 class="font-semibold text-lg">
+              Question-4: What is event bubbling in the DOM?
+            </h3>
+            <hr />
+            <p class="text-gray-600 mt-2">
+              kivabe prarrent theke child a jay and child theke parant e jay
+              eita
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document
+        .getElementById("backToDeskBtn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>
