@@ -42,3 +42,45 @@ document.getElementById("current-date").innerText =
 document.getElementById("Clear-History").addEventListener("click", function () {
   document.getElementById("history").style.display = "none";
 });
+document.getElementById("theme-btn").addEventListener("click", function () {
+  const themes = [
+    "#aaa69d",
+    "#f5cd79",
+    "#fa3c83",
+    "#BDC581",
+    "#CAD3C8",
+    "#F8EFBA",
+    "#ff6b6b",
+    "#48dbfb",
+    "#1dd1a1",
+    "#feca57",
+    "#5f27cd",
+    "#ff9ff3",
+    "#00d2d3",
+    "#c8d6e5",
+    "#576574",
+    "#ff9f43",
+    "#ee5253",
+    "#0abde3",
+    "#10ac84",
+    "#ff6b81",
+    "#a29bfe",
+    "#fd79a8",
+    "#ffeaa7",
+    "#00cec9",
+    "#fab1a0",
+    "#dfe6e9",
+    "#636e72",
+    "#b2bec3",
+    "#e84393",
+    "#fdcb6e",
+    "#2d3436",
+    "#55efc4",
+    "#74b9ff",
+    "#e17055",
+    "#00b894",
+    "#0984e3",
+  ];
+  document.body.style.backgroundColor =
+    themes[Math.floor(Math.random() * themes.length)];
+});
